@@ -1,40 +1,89 @@
 /*Reeditado por Luis Benitez
 luisbenitez02@gmail.com*/
-header, footer, article, aside {
-	/*display: block;*/ /*En Firefox 28 no fue necesario*/
+/*header, footer, article, aside {
+	display: block; /*En Firefox 28 no fue necesario
+}*/
+
+	/*Fuentes Personalizadas*/
+@font-face{
+	font-family:mockup;
+	src: url(font/Mockup-Regular.otf) format('Opentype');
 }
+
 body {
-	font-size: 0.8em;
+	/*font-size: 0.8em;*/
 }
+
 .wrapper {
 	position: relative;
-	width: 700px;/*Width tambien puede ser en porcentaje, pero se desajusta header y alineacion de texto, deben agregarse mas propiedades para ajsutar*/
+	width: 100%;/*Ajuste de la pagina automaticamente*/
 }
-header {
-	height: 190px;
-	background: url(header.png) no-repeat;
+
+/*Cabecera del sitio*/
+
+header,nav {
+	width: 100%;
+	height: 70px;
+	background-color: white;
 }
-h1 {
-	text-indent: -500em;
+nav{
+	position:fixed;
+
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow:    0px 2px 5px 0px rgba(0, 0, 0, 0.8);
+	box-shadow:         0px 2px 5px 0px rgba(0, 0, 0, 0.8);
 }
+
+div#marco, img#logo{
+	width: 82px;
+	height: 82px;
+}
+div#marco{
+	float:left;
+	padding-left: 2px;
+	padding-top: 2px;
+}
+img.inter{
+	padding-right: 5px;
+	padding-top: 12px;
+	width: 45px;
+	height: 45px;
+}
+
+div#menu{
+	height: 100%;
+	float: left;
+}
+
+div#user{
+	float: right;
+}
+
+li{
+	padding-top: 20px;
+	padding-left: 10px;
+	list-style: none;
+	display: inline-block;
+
+	font-family: mockup;
+	font-size: 24px;
+	color: rgba(232, 74, 68, 1);
+
+}
+ul{
+	margin: auto;
+	padding-top: -140px;
+	display: inline-block;
+	padding-left: 4px;
+}
+
 h2 {
 	padding: 0 0 1em;
 	color: #d00;
 	font: 1.4em helvetica,arial,sans-serif;
 }
-p {
-	padding: 0 0 1em;
-	color: #666;
-	font: 1em/1.6em helvetica,arial,sans-serif;
-}
-.wrapper a {
-	color: #000;
-	text-decoration: none;
-	border-bottom: 2px solid #0bf;
-}
-a:hover {
-	color: #0bf;
-}
+
+
 strong {
 	font-weight: normal;
 }
