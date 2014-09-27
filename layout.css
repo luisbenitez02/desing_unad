@@ -1,0 +1,26 @@
+/*Comentarios editados por Luis Benitez
+luisbenitez02@gmail.com*/
+* {
+	margin: 0;/*Quita margenes predeterminados del navegador*/
+}
+html, body {
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -155px; /* El margin-bottom es el valor negativo del height del footer */
+}
+footer, .push {
+	height: 155px; /* '.push' Ambos deben tener la misma altura */
+}
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+Clear: boot; y demas propiedades anteriormente utilizadas para dejar el footer abajo tambien pueden ser requeridas si se cambia el actual diseño
+
+*/
