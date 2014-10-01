@@ -11,8 +11,8 @@ html, body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -155px; /* El margin-bottom es el valor negativo del height del footer */
+	margin: 0 auto -55px; /* El margin-bottom es el valor negativo del height del footer */
 }
 footer, .push {
-	height: 155px; /* '.push' Ambos deben tener la misma altura */
+	height: 60px; /* '.push' Ambos deben tener la misma altura */
 }

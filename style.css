@@ -25,10 +25,11 @@ body {
 
 /*Cabecera del sitio*/
 
-header,nav {
+header,nav,footer {
 	width: 100%;
 	height: 55px;
 	background-color: white;
+	margin: 0 auto;
 }
 nav{
 	position:fixed;
@@ -122,40 +123,71 @@ p{
 h2{
 	font-family: mockup;
 }
+p#pie{
+	padding-top: 8px;
+	font-family: mockup;
+	color: rgba(169, 31, 34, 1);
+}
+footer{
+	-moz-border-radius-topleft: 10px;
+-webkit-border-top-left-radius: 10px;
+ border-top-left-radius: 10px;
+-moz-border-radius-topright: 10px;
+-webkit-border-top-right-radius: 10px;
+border-top-right-radius: 10px;
 
-footer {
-	/*position: relative;*//*No fue estrictamente necesario, aunque algun diseño diferente podria requerir esta propiedad*/
-	width: 700px;
-	margin: 0 auto;
-	background: url(footer.jpg) no-repeat;
+-webkit-box-shadow: 0px -1px 2px 0px rgba(0, 0, 0, 0.75);
+-moz-box-shadow:    0px -1px 2px 0px rgba(0, 0, 0, 0.75);
+box-shadow:         0px -1px 2px 0px rgba(0, 0, 0, 0.75);
 }
-/*Propiedades de estilo meramente visual*/
-footer a {
-	color: #0060b9;
-}
-footer a:hover {
-	color: #fff;
-}
-footer p {
-	padding: 95px 0 0;
-	color: #fff;
-	font: 1em helvetica,arial,sans-serif;
+
+footer p#pie{
 	text-align: center;
 }
-footer p.copyright {
-	padding: 1em 0 0;
-	color: #0060b9;
-	font-size: 0.8em;
+footer p#dere{
+	padding-right: 5px;
+	float: right;
+	text-shadow: 0px 0px 6px rgba(150, 150, 150, 0.98);
 }
+#izqui{
+	text-shadow: 0px 0px 6px rgba(150, 150, 150, 0.98);
+	padding-left: 5px;
+	float: left;
+	display: inline-block;
+}
+footer p#extra{
+	font-size: 12px;
+}
+
+.tienda{
+	width: 45%;
+	display: inline-block;
+	text-align: center;
+}
+
+
+#banner{
+	margin-top: 100px;
+	width: 	80%;
+}
+#resource{
+	text-align: center;
+}
+
+section#e-commerce{
+		padding-top: 30px;
+}
+.referencia{
+	width: 	200px;
+	height: 156px;
+}
+
 /*Media Queries Responsive Web Desing*/
 @media screen and (max-width: 452px){
 	nav{
 		height: 80px;
 	}
 
-	ul{
-		
-	}
 
 	ul li:first-child {
   		padding-top: 2px;
@@ -169,5 +201,20 @@ footer p.copyright {
 		background-color: white;
 		font-size: 18px;
 	}
+	h2.title{
+		font-size: 	14px;
+	}
+	.tienda{
+	width: 100%;
+	display:block;
+}
 
+}
+@media screen and (max-width: 379px){
+		#contact{
+			font-size: 12px;
+		}
+		footer p#extra{
+			font-size: 11px;
+		}
 }
