@@ -2,8 +2,10 @@
 luisbenitez02@gmail.com*/
 
 	/*Fuentes Personalizadas*/
-@import url(http://fonts.googleapis.com/css?family=Roboto:300);
-
+@font-face{
+	font-family: Roboto;
+	src: url(font/Roboto-Regular.ttf) format('TrueType');
+} 
 @font-face{
 	font-family:mockup;
 	src: url(font/Mockup-Regular.otf) format('Opentype');
@@ -123,7 +125,7 @@ section p{
 	padding-left: 6px;
 }
 p{
-	font-family: 'Roboto', sans-serif;
+	font-family: Roboto;
 }
 
 h2{
