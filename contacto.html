@@ -31,8 +31,12 @@
 
 			<section id="formulario">
 				<form action='' method="post" id="datos">
-					<label>Tu Nombre: </label><input class="input" type="text" name="username" id="user-name" value=""/></label><br>
-					<label >Tus Apellidos:<input class="input" type="text" name="apellidos" id="user-apellido" value=""/><br> </label>
+					<label>Tu Nombre:<input class="ingreso" type="text" name="username" id="user-name" value=""  required/></label><br><br>
+					<label >Tus Apellidos:<input class="ingreso" type="text" name="apellidos" id="user-apellido" value="" required/></label><br><br>
+					<label> Email:<input class="ingreso" type="email" name="email" placeholder="1234@ejemplo.com" value="" required></label><br><br>
+					<label> Telefono:<input class="ingreso" type="tel" name="email" placeholder="315 55 66" value=""></label><br><br>
+					<h3 id="coment">¿En que te podemos ayudar?</h3>
+					<textarea name="comentarios" rows="10" cols="40" placeholder="Escribenos tus comentarios"></textarea>
 				</form>
 				<input name="submit" type="submit"  value="Enviar" id="envio"/>
 			</section>

@@ -1,8 +1,5 @@
 /*Reeditado por Luis Benitez
 luisbenitez02@gmail.com*/
-/*header, footer, article, aside {
-	display: block; /*En Firefox 28 no fue necesario
-}*/
 
 	/*Fuentes Personalizadas*/
 @import url(http://fonts.googleapis.com/css?family=Roboto:300);
@@ -15,7 +12,6 @@ luisbenitez02@gmail.com*/
 
 body {
 	background-color: rgba(255, 206, 91, 0.5); 
-	/*font-size: 0.8em;*/
 }
 
 .wrapper {
@@ -101,7 +97,17 @@ article{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
+section#noticias{
+	width: 100%;
+}
 
+section h2{
+	text-align: center;
+}
+#pantalla{
+	width: 100%;
+	text-align: center;
+}
 section#about h2{
 	text-align: center;
 	color: rgba(38,110,255,1);
@@ -164,31 +170,50 @@ footer p#extra{
 	display: inline-block;
 	text-align: center;
 }
-
-
 #banner{
 	margin-top: 100px;
 	width: 	80%;
 }
-#resource{
-	text-align: center;
-}
+div#resource{
+	text-align: center;/*Recurso para alinear la imagen*/
 
-section#e-commerce{
+}
+section#e-commerce, section#formulario{
 		padding-top: 30px;
 }
 .referencia{
 	width: 	200px;
 	height: 156px;
 }
+label, #coment{
+	font-family: mockup;
+	float: right;
+	padding-right: 40%;
+}
+#envio{
+	left:50%;
+	top:50%;
+	position: relative;
+}
+input.ingreso{
+	width: 160px;
+}
+textarea{
+	width: 80%;
+	height: 60px;
+	margin-left: 8px;
+	margin-bottom: 12px;
+}
 
+div#primero{
+	width: 120px;
+	margin: auto;
+}
 /*Media Queries Responsive Web Desing*/
 @media screen and (max-width: 452px){
 	nav{
 		height: 80px;
 	}
-
-
 	ul li:first-child {
   		padding-top: 2px;
 	}
@@ -216,5 +241,19 @@ section#e-commerce{
 		}
 		footer p#extra{
 			font-size: 11px;
-		}
+		}	
+}
+@media screen and (max-width: 526px){
+	textarea{
+		width: 320;
+		height: 80px;
+	}
+	input{
+		display: block;
+	}
+}
+@media screen and (max-width: 560px){
+	object{
+		width: 100%;
+	}
 }
